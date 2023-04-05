@@ -4,9 +4,9 @@ import Base from '../Base/Base'
 
 
 const StudentProfile = ({studentsData})=>{
-  //console.log(studentsData)
+
   const {id} = useParams();   
-  //console.log(id)
+ 
   const student = studentsData[id]
     return(
         <Base

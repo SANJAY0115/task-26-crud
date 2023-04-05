@@ -22,10 +22,7 @@
   height: 75%;
   text-align: center;
 }
-/* .children-segment{
-  border: 1px solid red;
-}
- */
+
 .card-containers{
   display: grid;
   gap : 1 rem;

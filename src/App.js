@@ -17,7 +17,7 @@ import EditStudent from './Components/EditStudent';
 
 
 function App() {
-   // keep the useState which holds the data - globally , so that we can noww send it to multiple component (routers)
+   
    const [studentsData , setStudents] = useState(data)
 
   return (

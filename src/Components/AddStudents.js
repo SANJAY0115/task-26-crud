@@ -6,7 +6,7 @@ import Base from "../Base/Base";
 
 const AddStudents = ({studentsData,setStudents})=>{
 
-// add button click pana vudanane student page iku poga , use history and give the path
+
     const history = useHistory();
 
     const[id,setId] = useState("")

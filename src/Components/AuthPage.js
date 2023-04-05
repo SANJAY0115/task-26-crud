@@ -9,7 +9,7 @@ import { authdata } from '../Data/authdata'
 const AuthPage = () => {
   
   const [auth , setAuth] = useState(authdata)
-//  console.log(auth);
+
 
   const [loginName , setLoginName] = useState("")
   const [password , setPassword] = useState("")
@@ -20,14 +20,14 @@ const AuthPage = () => {
   const loginUser = ()=> {
     if( loginName === auth[0].name && password === auth[0].password )
     {
-      //console.log("Correct name and password")
+     
 
        localStorage.setItem("user-name",loginName)
        setError(false)
        history.push("/details")
     }
     else{
-      //  console.log("wrong name or password")
+     
 
        setError(true)
     }

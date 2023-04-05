@@ -26,29 +26,15 @@ const EditStudent = ({studentsData , setStudents})=>{
       setExperience(student.yearOfExperienece)
      },[])
 
-  // console.log(idx);
-  // const student = studentsData[id];
-  //  console.log(student)
 
-
-  // useEffect 
-  // initial things and mounting happening place.
-
-    //  useEffect(()=>{
-    //    console.log("effcets calleed")
-    //  } , [idx])
     
    
   
         const updateStudentData = ()=>{
   
-          //  console.log(editId);
-  
-         // 1. select and find our student
+         
           const editStudentsIndex = studentsData.findIndex((ele)=> ele.id === editId )
-          // console.log(editStudentsIndex)
-  
-        // 2. change the updated object in the soecific array of data  
+          
         const updatedStudObj = {
           idx,
           name,
@@ -56,15 +42,13 @@ const EditStudent = ({studentsData , setStudents})=>{
           gender,
           yearOfExperienece : experience
         } 
-        // console.log(updatedStudObj);
-  
-        // 3. change the updated object in the specific array of data
+       
         studentsData[editStudentsIndex]=updatedStudObj;
         
-        // 4.set the students data
+        
         setStudents([...studentsData])
   
-        // Update panna vudanae data's aee input field la emmpty aka , add la pana madharie set func pottu empty pani vittru
+        
         setIdx("")
         setName("")
         setBatch("")
@@ -76,7 +60,7 @@ const EditStudent = ({studentsData , setStudents})=>{
 
     return(
 
-    //  <div> EditStudent {id} studid {studid} </div>
+    
     
       <Base 
         tittle= "Edit a Student"
